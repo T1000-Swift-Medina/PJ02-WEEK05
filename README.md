@@ -15,9 +15,9 @@ By the time you submit this project, you will have covered new ground  and revie
 * **Auto Layout**
 * **UIKit Framework**
 * **UIViewController**
-* **UITabBarController, UITabBarItem**
-* **UINavigationController, UINavigationBarItem**
-* **UITableViewController, UITableView, UITableViewCell**
+* **UITabBarController and UITabBarItem**
+* **UINavigationController, UINavigationBar and UINavigationItem**
+* **UITableViewController, UITableView and UITableViewCell**
 * **UIScrollViews**
 * **Action and Manual Segues**
 * **UserDefaults**
