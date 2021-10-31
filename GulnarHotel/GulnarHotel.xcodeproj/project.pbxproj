@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22D8AA95272EB91A00C08A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AA94272EB91A00C08A82 /* AppDelegate.swift */; };
+		22D8AA97272EB91A00C08A82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AA96272EB91A00C08A82 /* SceneDelegate.swift */; };
+		22D8AA99272EB91A00C08A82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AA98272EB91A00C08A82 /* ViewController.swift */; };
+		22D8AA9C272EB91A00C08A82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D8AA9A272EB91A00C08A82 /* Main.storyboard */; };
+		22D8AA9E272EB91F00C08A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D8AA9D272EB91F00C08A82 /* Assets.xcassets */; };
+		22D8AAA1272EB91F00C08A82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D8AA9F272EB91F00C08A82 /* LaunchScreen.storyboard */; };
+		22D8AAAC272EB92000C08A82 /* GulnarHotelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAAB272EB92000C08A82 /* GulnarHotelTests.swift */; };
+		22D8AAB6272EB92000C08A82 /* GulnarHotelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAB5272EB92000C08A82 /* GulnarHotelUITests.swift */; };
+		22D8AAB8272EB92000C08A82 /* GulnarHotelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAB7272EB92000C08A82 /* GulnarHotelUITestsLaunchTests.swift */; };
+		22D8AAC6272F013600C08A82 /* BannerCellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAC4272F013600C08A82 /* BannerCellTableViewController.swift */; };
+		22D8AAC7272F013600C08A82 /* BannerCellTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D8AAC5272F013600C08A82 /* BannerCellTableViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22D8AAA8272EB92000C08A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D8AA89272EB91A00C08A82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D8AA90272EB91A00C08A82;
+			remoteInfo = GulnarHotel;
+		};
+		22D8AAB2272EB92000C08A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D8AA89272EB91A00C08A82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D8AA90272EB91A00C08A82;
+			remoteInfo = GulnarHotel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22D8AA91272EB91A00C08A82 /* GulnarHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GulnarHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D8AA94272EB91A00C08A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22D8AA96272EB91A00C08A82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		22D8AA98272EB91A00C08A82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22D8AA9B272EB91A00C08A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22D8AA9D272EB91F00C08A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22D8AAA0272EB91F00C08A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22D8AAA2272EB91F00C08A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D8AAA7272EB92000C08A82 /* GulnarHotelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GulnarHotelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D8AAAB272EB92000C08A82 /* GulnarHotelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GulnarHotelTests.swift; sourceTree = "<group>"; };
+		22D8AAB1272EB92000C08A82 /* GulnarHotelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GulnarHotelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D8AAB5272EB92000C08A82 /* GulnarHotelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GulnarHotelUITests.swift; sourceTree = "<group>"; };
+		22D8AAB7272EB92000C08A82 /* GulnarHotelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GulnarHotelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22D8AAC4272F013600C08A82 /* BannerCellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCellTableViewController.swift; sourceTree = "<group>"; };
+		22D8AAC5272F013600C08A82 /* BannerCellTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCellTableViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22D8AA8E272EB91A00C08A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D8AAA4272EB92000C08A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D8AAAE272EB92000C08A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22D8AA88272EB91A00C08A82 = {
+			isa = PBXGroup;
+			children = (
+				22D8AA93272EB91A00C08A82 /* GulnarHotel */,
+				22D8AAAA272EB92000C08A82 /* GulnarHotelTests */,
+				22D8AAB4272EB92000C08A82 /* GulnarHotelUITests */,
+				22D8AA92272EB91A00C08A82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22D8AA92272EB91A00C08A82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D8AA91272EB91A00C08A82 /* GulnarHotel.app */,
+				22D8AAA7272EB92000C08A82 /* GulnarHotelTests.xctest */,
+				22D8AAB1272EB92000C08A82 /* GulnarHotelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22D8AA93272EB91A00C08A82 /* GulnarHotel */ = {
+			isa = PBXGroup;
+			children = (
+				22D8AA94272EB91A00C08A82 /* AppDelegate.swift */,
+				22D8AA96272EB91A00C08A82 /* SceneDelegate.swift */,
+				22D8AA98272EB91A00C08A82 /* ViewController.swift */,
+				22D8AA9A272EB91A00C08A82 /* Main.storyboard */,
+				22D8AAC4272F013600C08A82 /* BannerCellTableViewController.swift */,
+				22D8AAC5272F013600C08A82 /* BannerCellTableViewController.xib */,
+				22D8AA9D272EB91F00C08A82 /* Assets.xcassets */,
+				22D8AA9F272EB91F00C08A82 /* LaunchScreen.storyboard */,
+				22D8AAA2272EB91F00C08A82 /* Info.plist */,
+			);
+			path = GulnarHotel;
+			sourceTree = "<group>";
+		};
+		22D8AAAA272EB92000C08A82 /* GulnarHotelTests */ = {
+			isa = PBXGroup;
+			children = (
+				22D8AAAB272EB92000C08A82 /* GulnarHotelTests.swift */,
+			);
+			path = GulnarHotelTests;
+			sourceTree = "<group>";
+		};
+		22D8AAB4272EB92000C08A82 /* GulnarHotelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22D8AAB5272EB92000C08A82 /* GulnarHotelUITests.swift */,
+				22D8AAB7272EB92000C08A82 /* GulnarHotelUITestsLaunchTests.swift */,
+			);
+			path = GulnarHotelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22D8AA90272EB91A00C08A82 /* GulnarHotel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D8AABB272EB92000C08A82 /* Build configuration list for PBXNativeTarget "GulnarHotel" */;
+			buildPhases = (
+				22D8AA8D272EB91A00C08A82 /* Sources */,
+				22D8AA8E272EB91A00C08A82 /* Frameworks */,
+				22D8AA8F272EB91A00C08A82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GulnarHotel;
+			productName = GulnarHotel;
+			productReference = 22D8AA91272EB91A00C08A82 /* GulnarHotel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22D8AAA6272EB92000C08A82 /* GulnarHotelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D8AABE272EB92000C08A82 /* Build configuration list for PBXNativeTarget "GulnarHotelTests" */;
+			buildPhases = (
+				22D8AAA3272EB92000C08A82 /* Sources */,
+				22D8AAA4272EB92000C08A82 /* Frameworks */,
+				22D8AAA5272EB92000C08A82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D8AAA9272EB92000C08A82 /* PBXTargetDependency */,
+			);
+			name = GulnarHotelTests;
+			productName = GulnarHotelTests;
+			productReference = 22D8AAA7272EB92000C08A82 /* GulnarHotelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22D8AAB0272EB92000C08A82 /* GulnarHotelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D8AAC1272EB92000C08A82 /* Build configuration list for PBXNativeTarget "GulnarHotelUITests" */;
+			buildPhases = (
+				22D8AAAD272EB92000C08A82 /* Sources */,
+				22D8AAAE272EB92000C08A82 /* Frameworks */,
+				22D8AAAF272EB92000C08A82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D8AAB3272EB92000C08A82 /* PBXTargetDependency */,
+			);
+			name = GulnarHotelUITests;
+			productName = GulnarHotelUITests;
+			productReference = 22D8AAB1272EB92000C08A82 /* GulnarHotelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22D8AA89272EB91A00C08A82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					22D8AA90272EB91A00C08A82 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					22D8AAA6272EB92000C08A82 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 22D8AA90272EB91A00C08A82;
+					};
+					22D8AAB0272EB92000C08A82 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 22D8AA90272EB91A00C08A82;
+					};
+				};
+			};
+			buildConfigurationList = 22D8AA8C272EB91A00C08A82 /* Build configuration list for PBXProject "GulnarHotel" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22D8AA88272EB91A00C08A82;
+			productRefGroup = 22D8AA92272EB91A00C08A82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22D8AA90272EB91A00C08A82 /* GulnarHotel */,
+				22D8AAA6272EB92000C08A82 /* GulnarHotelTests */,
+				22D8AAB0272EB92000C08A82 /* GulnarHotelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22D8AA8F272EB91A00C08A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D8AAA1272EB91F00C08A82 /* LaunchScreen.storyboard in Resources */,
+				22D8AAC7272F013600C08A82 /* BannerCellTableViewController.xib in Resources */,
+				22D8AA9E272EB91F00C08A82 /* Assets.xcassets in Resources */,
+				22D8AA9C272EB91A00C08A82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D8AAA5272EB92000C08A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D8AAAF272EB92000C08A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D8AA8D272EB91A00C08A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D8AA99272EB91A00C08A82 /* ViewController.swift in Sources */,
+				22D8AA95272EB91A00C08A82 /* AppDelegate.swift in Sources */,
+				22D8AA97272EB91A00C08A82 /* SceneDelegate.swift in Sources */,
+				22D8AAC6272F013600C08A82 /* BannerCellTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D8AAA3272EB92000C08A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D8AAAC272EB92000C08A82 /* GulnarHotelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D8AAAD272EB92000C08A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D8AAB8272EB92000C08A82 /* GulnarHotelUITestsLaunchTests.swift in Sources */,
+				22D8AAB6272EB92000C08A82 /* GulnarHotelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22D8AAA9272EB92000C08A82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D8AA90272EB91A00C08A82 /* GulnarHotel */;
+			targetProxy = 22D8AAA8272EB92000C08A82 /* PBXContainerItemProxy */;
+		};
+		22D8AAB3272EB92000C08A82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D8AA90272EB91A00C08A82 /* GulnarHotel */;
+			targetProxy = 22D8AAB2272EB92000C08A82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22D8AA9A272EB91A00C08A82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D8AA9B272EB91A00C08A82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22D8AA9F272EB91F00C08A82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D8AAA0272EB91F00C08A82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22D8AAB9272EB92000C08A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22D8AABA272EB92000C08A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22D8AABC272EB92000C08A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GulnarHotel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = google.com.GulnarHotel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22D8AABD272EB92000C08A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GulnarHotel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = google.com.GulnarHotel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22D8AABF272EB92000C08A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = google.com.GulnarHotelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GulnarHotel.app/GulnarHotel";
+			};
+			name = Debug;
+		};
+		22D8AAC0272EB92000C08A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = google.com.GulnarHotelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GulnarHotel.app/GulnarHotel";
+			};
+			name = Release;
+		};
+		22D8AAC2272EB92000C08A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = google.com.GulnarHotelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GulnarHotel;
+			};
+			name = Debug;
+		};
+		22D8AAC3272EB92000C08A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = google.com.GulnarHotelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GulnarHotel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22D8AA8C272EB91A00C08A82 /* Build configuration list for PBXProject "GulnarHotel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D8AAB9272EB92000C08A82 /* Debug */,
+				22D8AABA272EB92000C08A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D8AABB272EB92000C08A82 /* Build configuration list for PBXNativeTarget "GulnarHotel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D8AABC272EB92000C08A82 /* Debug */,
+				22D8AABD272EB92000C08A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D8AABE272EB92000C08A82 /* Build configuration list for PBXNativeTarget "GulnarHotelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D8AABF272EB92000C08A82 /* Debug */,
+				22D8AAC0272EB92000C08A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D8AAC1272EB92000C08A82 /* Build configuration list for PBXNativeTarget "GulnarHotelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D8AAC2272EB92000C08A82 /* Debug */,
+				22D8AAC3272EB92000C08A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22D8AA89272EB91A00C08A82 /* Project object */;
+}
