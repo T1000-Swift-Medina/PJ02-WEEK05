@@ -246,7 +246,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LrZ-Qa-KUy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="z32-jX-XUY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2880" y="840"/>
+            <point key="canvasLocation" x="-3514" y="840"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Clf-sJ-7nW">
@@ -262,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9t-Gp-ef1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4020" y="1562"/>
+            <point key="canvasLocation" x="-4500" y="1621"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AOv-C4-IYW">
@@ -305,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3OH-Qz-bDg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2914" y="1678"/>
+            <point key="canvasLocation" x="-3554" y="1621"/>
         </scene>
         <!--Enter Room-->
         <scene sceneID="zin-Mv-o7X">
@@ -331,10 +331,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Enter Room" id="qZ3-WJ-kJ4"/>
+                    <connections>
+                        <segue destination="Oda-cC-jVh" kind="show" identifier="editRoom" id="Glv-tN-1ai"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGT-V5-yYm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1173.913043478261" y="839.73214285714278"/>
+            <point key="canvasLocation" x="-752" y="840"/>
         </scene>
         <!--Prod-->
         <scene sceneID="oJ7-s5-uHL">
@@ -348,6 +351,13 @@
                                 <rect key="frame" x="40" y="183" width="313" height="257"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNX-6H-4yd">
+                                <rect key="frame" x="82" y="602" width="146" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z4i-vK-dck"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -355,13 +365,12 @@
                     <navigationItem key="navigationItem" id="Ata-Vb-FjJ"/>
                     <connections>
                         <outlet property="ImgTA" destination="d4V-kg-02a" id="2Dm-63-FJg"/>
-                        <outlet property="imgve" destination="d4V-kg-02a" id="DYA-mc-VTQ"/>
-                        <segue destination="JwO-cK-pzM" kind="showDetail" id="oyT-th-ae2"/>
+                        <outlet property="lable11" destination="QNX-6H-4yd" id="hfF-t4-sdE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJP-hr-kb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1523.1884057971015" y="1561.6071428571429"/>
+            <point key="canvasLocation" x="-752" y="1570"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="6gU-G3-Z3C">
@@ -457,7 +466,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbh-nc-jAh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3672" y="840"/>
+            <point key="canvasLocation" x="-4554" y="840"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="VSK-Dz-pcm">
@@ -495,12 +504,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbv-Pm-RmU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2084.057971014493" y="839.73214285714278"/>
+            <point key="canvasLocation" x="-1546" y="840"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="7QG-ow-7uX"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.45345311729999999" green="0.041117601099999998" blue="0.011649422350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="BnGulnar" width="1779" height="737"/>

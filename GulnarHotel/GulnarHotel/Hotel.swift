@@ -10,9 +10,13 @@ struct Product {
     var title: String = ""
     var imgProduct: String
 }
+class Room {
+    var items = [Product]()
+}
 
 class Hotel: UITableViewController {
-    
+    var selectedIndex : Int!
+    var rooms = Room()
     var item: [Product] = [Product (title: "Ma", imgProduct: "soper"),
                            Product (title: "Mi", imgProduct: "soper2"),
                            Product (title: "Ma", imgProduct: "soper3"),
@@ -23,7 +27,13 @@ class Hotel: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        rooms.items = [Product (title: "Ma", imgProduct: "soper"),
+                       Product (title: "Mi", imgProduct: "soper2"),
+                       Product (title: "Ma", imgProduct: "soper3"),
+                       Product (title: "Ma", imgProduct: "img3"),
+                       Product (title: "Ma", imgProduct: "img2:3"),
+                       Product (title: "Ma", imgProduct: "img2:2")
+]
 //        tableView.register(UINib(nibName:"BannerCell", bundle: nil), forCellReuseIdentifier: "BannerID")
 //        tableView.rowHeight = 120
         tableView.register(UINib(nibName:"ProductCell", bundle: nil), forCellReuseIdentifier: "ProductID")
@@ -32,23 +42,22 @@ class Hotel: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if section == 0 {
-            return 1
-        } else {
-            return item.count
-        }
+//        if section == 0 {
+//            return 1
+//        } else {
+            return rooms.items.count
+//        }
             
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      //  print("user selected: \(indexPath.row)")
-        
-        let vc = storyboard?.instantiateViewController(withIdentifier: "Prod") as? Prod
-        self.navigationController?.pushViewController(vc!, animated: true)
+        print("user selected: \(indexPath.row)")
+        selectedIndex = indexPath.row
+        performSegue(withIdentifier: "editRoom", sender: self)
         
         
     }
@@ -64,8 +73,8 @@ class Hotel: UITableViewController {
 //
           let cellProduct = tableView.dequeueReusableCell(withIdentifier: "ProductID") as! ProductCell
             
-            cellProduct.MasterSuite.text = item[indexPath.row ].title
-            cellProduct.img1.image = UIImage(named: item[indexPath.row].imgProduct)
+            cellProduct.MasterSuite.text = rooms.items[indexPath.row ].title
+            cellProduct.img1.image = UIImage(named: rooms.items[indexPath.row].imgProduct)
             
             return cellProduct
             
@@ -86,17 +95,18 @@ class Hotel: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            rooms.items.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -113,15 +123,21 @@ class Hotel: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "editRoom" {
+            let editVC = segue.destination as! Prod
+            editVC.rooms = rooms
+            editVC.selectedRoomIndex = selectedIndex
+        }
+        
     }
-    */
+    
 }
 
 /*

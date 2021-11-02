@@ -8,8 +8,14 @@
 import UIKit
 
 class Prod: UIViewController {
-
+    var rooms : Room!
+    var selectedRoomIndex : Int!
+    
     @IBOutlet weak var ImgTA: UIImageView!
+    @IBOutlet weak var lable11: UILabel!
+    override func viewWillAppear(_ animated: Bool) {
+        print(rooms.items[selectedRoomIndex])
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
