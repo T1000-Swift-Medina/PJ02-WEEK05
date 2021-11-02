@@ -1,0 +1,57 @@
+
+/* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "0Ei-bU-K5P"; */
+"0Ei-bU-K5P.title" = "Favorites";
+
+/* Class = "UINavigationItem"; title = "Enter Room"; ObjectID = "4pq-9q-uWg"; */
+"4pq-9q-uWg.title" = "Enter Room";
+
+/* Class = "UIButton"; configuration.title = "LogIn"; ObjectID = "9ON-gi-rv1"; */
+"9ON-gi-rv1.configuration.title" = "LogIn";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9ON-gi-rv1"; */
+"9ON-gi-rv1.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "LogIn"; ObjectID = "DhV-JL-IRC"; */
+"DhV-JL-IRC.configuration.title" = "LogIn";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DhV-JL-IRC"; */
+"DhV-JL-IRC.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Booking"; ObjectID = "FqZ-oV-JZy"; */
+"FqZ-oV-JZy.title" = "Booking";
+
+/* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "GWg-e5-oLl"; */
+"GWg-e5-oLl.title" = "Favorites";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "Ldh-pf-7sv"; */
+"Ldh-pf-7sv.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ldh-pf-7sv"; */
+"Ldh-pf-7sv.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Search"; ObjectID = "PWm-s8-ZdS"; */
+"PWm-s8-ZdS.title" = "Search";
+
+/* Class = "UITabBarItem"; title = "lognIn"; ObjectID = "Zzp-97-SBo"; */
+"Zzp-97-SBo.title" = "lognIn";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "a0x-jK-2cA"; */
+"a0x-jK-2cA.title" = "Search";
+
+/* Class = "UIButton"; configuration.title = "Enter Room"; ObjectID = "aM9-7H-NWg"; */
+"aM9-7H-NWg.configuration.title" = "Enter Room";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aM9-7H-NWg"; */
+"aM9-7H-NWg.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Boking"; ObjectID = "fgb-VV-lZG"; */
+"fgb-VV-lZG.title" = "Boking";
+
+/* Class = "UINavigationItem"; title = "LogIn"; ObjectID = "ocM-P2-70l"; */
+"ocM-P2-70l.title" = "LogIn";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "tMW-nH-iT2"; */
+"tMW-nH-iT2.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tMW-nH-iT2"; */
+"tMW-nH-iT2.normalTitle" = "Button";

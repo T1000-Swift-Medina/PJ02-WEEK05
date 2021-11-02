@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22999F1F2731370200628287 /* Prod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22999F1E2731370200628287 /* Prod.swift */; };
 		22D8AA95272EB91A00C08A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AA94272EB91A00C08A82 /* AppDelegate.swift */; };
 		22D8AA97272EB91A00C08A82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AA96272EB91A00C08A82 /* SceneDelegate.swift */; };
 		22D8AA99272EB91A00C08A82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AA98272EB91A00C08A82 /* ViewController.swift */; };
@@ -16,8 +17,11 @@
 		22D8AAAC272EB92000C08A82 /* GulnarHotelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAAB272EB92000C08A82 /* GulnarHotelTests.swift */; };
 		22D8AAB6272EB92000C08A82 /* GulnarHotelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAB5272EB92000C08A82 /* GulnarHotelUITests.swift */; };
 		22D8AAB8272EB92000C08A82 /* GulnarHotelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAB7272EB92000C08A82 /* GulnarHotelUITestsLaunchTests.swift */; };
-		22D8AAC6272F013600C08A82 /* BannerCellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAC4272F013600C08A82 /* BannerCellTableViewController.swift */; };
-		22D8AAC7272F013600C08A82 /* BannerCellTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D8AAC5272F013600C08A82 /* BannerCellTableViewController.xib */; };
+		22D8AACA272F022E00C08A82 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAC8272F022E00C08A82 /* BannerCell.swift */; };
+		22D8AACB272F022E00C08A82 /* BannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D8AAC9272F022E00C08A82 /* BannerCell.xib */; };
+		22D8AACE272F035600C08A82 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AACC272F035600C08A82 /* ProductCell.swift */; };
+		22D8AACF272F035600C08A82 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D8AACD272F035600C08A82 /* ProductCell.xib */; };
+		22D8AAD1272F039500C08A82 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AAD0272F039500C08A82 /* Hotel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22999F1E2731370200628287 /* Prod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prod.swift; sourceTree = "<group>"; };
 		22D8AA91272EB91A00C08A82 /* GulnarHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GulnarHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D8AA94272EB91A00C08A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22D8AA96272EB91A00C08A82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,8 +56,11 @@
 		22D8AAB1272EB92000C08A82 /* GulnarHotelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GulnarHotelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D8AAB5272EB92000C08A82 /* GulnarHotelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GulnarHotelUITests.swift; sourceTree = "<group>"; };
 		22D8AAB7272EB92000C08A82 /* GulnarHotelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GulnarHotelUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		22D8AAC4272F013600C08A82 /* BannerCellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCellTableViewController.swift; sourceTree = "<group>"; };
-		22D8AAC5272F013600C08A82 /* BannerCellTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCellTableViewController.xib; sourceTree = "<group>"; };
+		22D8AAC8272F022E00C08A82 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		22D8AAC9272F022E00C08A82 /* BannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCell.xib; sourceTree = "<group>"; };
+		22D8AACC272F035600C08A82 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		22D8AACD272F035600C08A82 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		22D8AAD0272F039500C08A82 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,12 @@
 				22D8AA96272EB91A00C08A82 /* SceneDelegate.swift */,
 				22D8AA98272EB91A00C08A82 /* ViewController.swift */,
 				22D8AA9A272EB91A00C08A82 /* Main.storyboard */,
-				22D8AAC4272F013600C08A82 /* BannerCellTableViewController.swift */,
-				22D8AAC5272F013600C08A82 /* BannerCellTableViewController.xib */,
+				22D8AAC8272F022E00C08A82 /* BannerCell.swift */,
+				22D8AAC9272F022E00C08A82 /* BannerCell.xib */,
+				22D8AACC272F035600C08A82 /* ProductCell.swift */,
+				22D8AACD272F035600C08A82 /* ProductCell.xib */,
+				22D8AAD0272F039500C08A82 /* Hotel.swift */,
+				22999F1E2731370200628287 /* Prod.swift */,
 				22D8AA9D272EB91F00C08A82 /* Assets.xcassets */,
 				22D8AA9F272EB91F00C08A82 /* LaunchScreen.storyboard */,
 				22D8AAA2272EB91F00C08A82 /* Info.plist */,
@@ -238,7 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D8AAA1272EB91F00C08A82 /* LaunchScreen.storyboard in Resources */,
-				22D8AAC7272F013600C08A82 /* BannerCellTableViewController.xib in Resources */,
+				22D8AACB272F022E00C08A82 /* BannerCell.xib in Resources */,
+				22D8AACF272F035600C08A82 /* ProductCell.xib in Resources */,
 				22D8AA9E272EB91F00C08A82 /* Assets.xcassets in Resources */,
 				22D8AA9C272EB91A00C08A82 /* Main.storyboard in Resources */,
 			);
@@ -265,10 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22999F1F2731370200628287 /* Prod.swift in Sources */,
+				22D8AAD1272F039500C08A82 /* Hotel.swift in Sources */,
 				22D8AA99272EB91A00C08A82 /* ViewController.swift in Sources */,
+				22D8AACA272F022E00C08A82 /* BannerCell.swift in Sources */,
+				22D8AACE272F035600C08A82 /* ProductCell.swift in Sources */,
 				22D8AA95272EB91A00C08A82 /* AppDelegate.swift in Sources */,
 				22D8AA97272EB91A00C08A82 /* SceneDelegate.swift in Sources */,
-				22D8AAC6272F013600C08A82 /* BannerCellTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,46 +1,83 @@
 //
-//  BannerCellTableViewController.swift
+//  Hotel.swift
 //  GulnarHotel
 //
 //  Created by العــفاف . on 25/03/1443 AH.
 //
 
 import UIKit
+struct Product {
+    var title: String = ""
+    var imgProduct: String
+}
 
-class BannerCellTableViewController: UITableViewController {
-        
+class Hotel: UITableViewController {
+    
+    var item: [Product] = [Product (title: "Ma", imgProduct: "soper"),
+                           Product (title: "Mi", imgProduct: "soper2"),
+                           Product (title: "Ma", imgProduct: "soper3"),
+                           Product (title: "Ma", imgProduct: "img3"),
+                           Product (title: "Ma", imgProduct: "img2:3"),
+                           Product (title: "Ma", imgProduct: "img2:2")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//        tableView.register(UINib(nibName:"BannerCell", bundle: nil), forCellReuseIdentifier: "BannerID")
+//        tableView.rowHeight = 120
+        tableView.register(UINib(nibName:"ProductCell", bundle: nil), forCellReuseIdentifier: "ProductID")
+        tableView.rowHeight = 300
     }
-
-    // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if section == 0 {
+            return 1
+        } else {
+            return item.count
+        }
+            
     }
-
-    /*
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      //  print("user selected: \(indexPath.row)")
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Prod") as? Prod
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath
+        
+    
+//        if(indexPath.section == 0){
+//        let cellBanner = tableView.dequeueReusableCell(withIdentifier: "BannerID") as! BannerCellTableViewCell
+//
+//            return cellBanner
+//        } else {
+//
+          let cellProduct = tableView.dequeueReusableCell(withIdentifier: "ProductID") as! ProductCell
+            
+            cellProduct.MasterSuite.text = item[indexPath.row ].title
+            cellProduct.img1.image = UIImage(named: item[indexPath.row].imgProduct)
+            
+            return cellProduct
+            
+        
     }
-    */
-
+    
+    
+   // override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // stry
+        // nav ctrl show
+        
+   // }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -85,5 +122,17 @@ class BannerCellTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
 }
+
+/*
+ 
+ 
+ 
+ 
+ */
+
+
+
+
+
+
