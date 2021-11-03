@@ -14,6 +14,7 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var MasterSuite: UILabel!
     @IBAction func ShowMore(_ sender: Any) {
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

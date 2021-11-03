@@ -8,6 +8,11 @@
 import UIKit
 struct Product {
     var title: String = ""
+    var desc: String!
+    var bed2: String!
+    var Guests: String!
+    var Price2: String!
+    
     var imgProduct: String
 }
 class Room {
@@ -17,8 +22,8 @@ class Room {
 class Hotel: UITableViewController {
     var selectedIndex : Int!
     var rooms = Room()
-    var item: [Product] = [Product (title: "Ma", imgProduct: "soper"),
-                           Product (title: "Mi", imgProduct: "soper2"),
+    var item: [Product] = [Product (title: "Ma", desc: "xcx", imgProduct: "soper"),
+                           Product (title: "Mi", desc: ",mx", imgProduct: "soper2"),
                            Product (title: "Ma", imgProduct: "soper3"),
                            Product (title: "Ma", imgProduct: "img3"),
                            Product (title: "Ma", imgProduct: "img2:3"),
@@ -27,12 +32,12 @@ class Hotel: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        rooms.items = [Product (title: "Ma", imgProduct: "soper"),
-                       Product (title: "Mi", imgProduct: "soper2"),
-                       Product (title: "Ma", imgProduct: "soper3"),
-                       Product (title: "Ma", imgProduct: "img3"),
-                       Product (title: "Ma", imgProduct: "img2:3"),
-                       Product (title: "Ma", imgProduct: "img2:2")
+        rooms.items = [Product (title: " Guest Room King with Sofa Bed",desc: " Guest Room King with Sofa Bed",bed2: "1 king bed and 1 sofa bed ",Guests: "3 Guests max, with a maximum of 3 adults",Price2: " Price 255$", imgProduct: "soper"),
+                       Product (title: " Guestroom Two Queens",desc: " Guestroom Two Queens",bed2: "2 queen beds", Guests: "4 Guests max, with a maximum of 4 adults",Price2: " Price 100$", imgProduct: "soper2"),
+                       Product (title: " Mobility/Hearing Accessible Guestroom King Tub",desc: " Mobility/Hearing Accessible Guestroom King Tub",bed2: "1 king bed  and 1 sofa bed ",Guests: "3 Guests max, with a maximum of 3 adults",Price2: " Price 88$", imgProduct: "soper3"),
+                       Product (title: " Mobility/Hearing Accessible Guestroom Two Queens Tub",desc: " Mobility/Hearing Accessible Guestroom Two Queens Tub", bed2: "2 full beds  and 1 sofa bed ", Guests: "6 Guests max, with a maximum of 6 adults",Price2: " Price 50$", imgProduct: "img3"),
+                       Product (title: " Hearing Accessible Guestroom Two Queens",desc:" Hearing Accessible Guestroom Two Queens", bed2: "1 full bed  and 1 sofa bed ", Guests: "6 Guests max, with a maximum of 6 adults",Price2: " Price 90$", imgProduct: "img2:3"),
+                       Product (title: " Hearing Accessible Guestroom Two Queens",desc: " Hearing Accessible Guestroom Two Queens", bed2: "2 queen beds ",Guests: "4 Guests max, with a maximum of 4 adults",Price2: " Price 70$", imgProduct: "img2:2")
 ]
 //        tableView.register(UINib(nibName:"BannerCell", bundle: nil), forCellReuseIdentifier: "BannerID")
 //        tableView.rowHeight = 120
@@ -58,6 +63,7 @@ class Hotel: UITableViewController {
         print("user selected: \(indexPath.row)")
         selectedIndex = indexPath.row
         performSegue(withIdentifier: "editRoom", sender: self)
+        
         
         
     }
@@ -98,6 +104,14 @@ class Hotel: UITableViewController {
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//
+//        let detail:Prod = self.storyboard?.instantiateViewController(withIdentifier: "Prod") as! Prod
+//        detail.strlable = rooms.items[indexPath.row]
+//        detail.strimg = rooms.items[indexPath.row]
+//        self.navigationController?.pushViewController(detail, animated: true)
+//
+        
+        
         if editingStyle == .delete {
             // Delete the row from the data source
             rooms.items.remove(at: indexPath.row)
@@ -135,20 +149,16 @@ class Hotel: UITableViewController {
             editVC.rooms = rooms
             editVC.selectedRoomIndex = selectedIndex
         }
+//        if segue.identifier == "Add Room"{
+//            let AddVC = segue.destination as! Prod
+//            AddVC.rooms = rooms
+//        }
         
+       
     }
     
+
+
 }
-
-/*
- 
- 
- 
- 
- */
-
-
-
-
 
 
