@@ -6,8 +6,7 @@
 //
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, PassingData {
     
     var List: [(title: String, note: String)] = []
 
@@ -19,19 +18,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.dataSource = self
     }
     
-    //Adding Page
+    var listIndex = 0
+    
+    func updating(title: String, descrption: String) {
+        List[listIndex].title = title
+        List[listIndex].note = descrption
+        table.reloadData()
+    }
+        
     @IBAction func didTapNewNote() {
         
-        guard let AP = storyboard?.instantiateViewController(identifier: "Add Page") as? EntryViewController else {
+        guard let AP = storyboard?.instantiateViewController(identifier: "New Note") as? EntryViewController else {
             return
         }
 
         AP.completion = { noteTitle, note in
             self.navigationController?.popToRootViewController(animated: true)
             self.List.append((title: noteTitle, note: note))
-            self.label.isHidden = true
+            
+//            self.label.isHidden = false
             self.table.isHidden = false
-
             self.table.reloadData()
         }
         navigationController?.pushViewController(AP, animated: true)
@@ -43,7 +49,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
         }
         }
-
     // Table
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,17 +64,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-
+        listIndex = indexPath.row
         let model = List[indexPath.row]
-
+        
         // Show note controller
-        guard let vc = storyboard?.instantiateViewController(identifier: "note") as? NoteViewController else {
+        guard let SP = storyboard?.instantiateViewController(identifier: "Show Note") as? NoteViewController else {
             return
         }
-        
-        vc.noteTitle = model.title
-        vc.note = model.note
-        navigationController?.pushViewController(vc, animated: true)
+        SP.noteTitle = model.title
+        SP.note = model.note
+        SP.delegate = self
+        navigationController?.pushViewController(SP, animated: true)
     }
 
 }

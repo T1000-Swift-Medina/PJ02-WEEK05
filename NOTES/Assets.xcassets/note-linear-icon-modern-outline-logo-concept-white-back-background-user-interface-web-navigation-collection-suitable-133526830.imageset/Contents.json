@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "note-linear-icon-modern-outline-logo-concept-white-back-background-user-interface-web-navigation-collection-suitable-133526830.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
