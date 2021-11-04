@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductID" rowHeight="291" id="KGk-i7-Jjw" customClass="ProductCell" customModule="GulnarHotel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="291"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="291"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="soper" translatesAutoresizingMaskIntoConstraints="NO" id="1vG-YJ-JMg">
+                        <rect key="frame" x="20" y="0.0" width="346" height="211"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="211" id="Ef0-Au-O0u"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ut1-wC-2Gl">
+                        <rect key="frame" x="145" y="243" width="96.5" height="31"/>
+                        <color key="backgroundColor" red="0.76436680560000003" green="0.36105009910000002" blue="0.31566566229999998" alpha="0.55472569890000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.76436680560000003" green="0.36105009910000002" blue="0.31566566229999998" alpha="0.72972625940000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Show More">
+                            <color key="baseBackgroundColor" red="0.76436680560000003" green="0.36105009910000002" blue="0.31566566229999998" alpha="0.72972625940000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="ShowMore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RPI-vR-gsL"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Master Suite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYe-dv-1WN">
+                        <rect key="frame" x="100" y="219" width="186" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.45345311729999999" green="0.041117601099999998" blue="0.011649422350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.76470588235294112" green="0.36078431372549019" blue="0.31372549019607843" alpha="0.18437734593424751" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Ut1-wC-2Gl" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1ao-QN-aD1"/>
+                    <constraint firstItem="VYe-dv-1WN" firstAttribute="top" secondItem="1vG-YJ-JMg" secondAttribute="bottom" constant="8" symbolic="YES" id="9e7-q0-CHD"/>
+                    <constraint firstItem="1vG-YJ-JMg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Jdm-57-P9p"/>
+                    <constraint firstItem="1vG-YJ-JMg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="LVA-kK-wwR"/>
+                    <constraint firstAttribute="trailing" secondItem="1vG-YJ-JMg" secondAttribute="trailing" constant="20" id="XAh-sK-UJq"/>
+                    <constraint firstItem="Ut1-wC-2Gl" firstAttribute="top" secondItem="VYe-dv-1WN" secondAttribute="bottom" constant="8" symbolic="YES" id="XaY-X6-Jkv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VYe-dv-1WN" secondAttribute="trailing" constant="80" id="Xby-5l-mJ8"/>
+                    <constraint firstItem="VYe-dv-1WN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ikz-d1-SxS"/>
+                    <constraint firstItem="VYe-dv-1WN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="oPe-2u-Oiv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="MasterSuite" destination="VYe-dv-1WN" id="8qN-SX-cYd"/>
+                <outlet property="img1" destination="1vG-YJ-JMg" id="V3E-fR-6sF"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="137.61160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="soper" width="564" height="564"/>
+    </resources>
+</document>
