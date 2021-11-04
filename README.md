@@ -17,7 +17,6 @@ concept used in this project :
 - navgation controller.
 - Tab bar view.
 - image view.
-- 
 
 What was the most difficult part of the project?
 -

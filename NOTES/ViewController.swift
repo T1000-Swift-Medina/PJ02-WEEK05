@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.navigationController?.popToRootViewController(animated: true)
             self.List.append((title: noteTitle, note: note))
             
-//            self.label.isHidden = false
+//            self.label.isHidden = true
             self.table.isHidden = false
             self.table.reloadData()
         }

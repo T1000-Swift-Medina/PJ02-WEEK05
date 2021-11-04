@@ -162,7 +162,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sss" translatesAutoresizingMaskIntoConstraints="NO" id="8Pc-Fo-WMQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sss" translatesAutoresizingMaskIntoConstraints="NO" id="8Pc-Fo-WMQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" red="0.24313727020000001" green="0.5411764979" blue="0.63921570780000003" alpha="0.65760271459999997" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
