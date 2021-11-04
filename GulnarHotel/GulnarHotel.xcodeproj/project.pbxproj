@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22999F1F2731370200628287 /* Prod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22999F1E2731370200628287 /* Prod.swift */; };
+		22999F2527339C0D00628287 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22999F2427339C0D00628287 /* UsersVC.swift */; };
 		22D8AA95272EB91A00C08A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AA94272EB91A00C08A82 /* AppDelegate.swift */; };
 		22D8AA97272EB91A00C08A82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AA96272EB91A00C08A82 /* SceneDelegate.swift */; };
 		22D8AA99272EB91A00C08A82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8AA98272EB91A00C08A82 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		22999F1E2731370200628287 /* Prod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prod.swift; sourceTree = "<group>"; };
+		22999F2427339C0D00628287 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		22D8AA91272EB91A00C08A82 /* GulnarHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GulnarHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D8AA94272EB91A00C08A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22D8AA96272EB91A00C08A82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				22D8AA9D272EB91F00C08A82 /* Assets.xcassets */,
 				22D8AA9F272EB91F00C08A82 /* LaunchScreen.storyboard */,
 				22D8AAA2272EB91F00C08A82 /* Info.plist */,
+				22999F2427339C0D00628287 /* UsersVC.swift */,
 			);
 			path = GulnarHotel;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				22999F1F2731370200628287 /* Prod.swift in Sources */,
 				22D8AAD1272F039500C08A82 /* Hotel.swift in Sources */,
 				22D8AA99272EB91A00C08A82 /* ViewController.swift in Sources */,
+				22999F2527339C0D00628287 /* UsersVC.swift in Sources */,
 				22D8AACA272F022E00C08A82 /* BannerCell.swift in Sources */,
 				22D8AACE272F035600C08A82 /* ProductCell.swift in Sources */,
 				22D8AA95272EB91A00C08A82 /* AppDelegate.swift in Sources */,

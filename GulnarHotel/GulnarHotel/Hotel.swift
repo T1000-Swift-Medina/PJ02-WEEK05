@@ -14,8 +14,12 @@ struct Product {
     var Price2: String!
     
     var imgProduct: String
+    
+    
+    
 }
 class Room {
+   
     var items = [Product]()
 }
 
@@ -43,6 +47,7 @@ class Hotel: UITableViewController {
 //        tableView.rowHeight = 120
         tableView.register(UINib(nibName:"ProductCell", bundle: nil), forCellReuseIdentifier: "ProductID")
         tableView.rowHeight = 300
+
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -159,6 +164,7 @@ class Hotel: UITableViewController {
     
 
 
+
+
+
 }
-
-
