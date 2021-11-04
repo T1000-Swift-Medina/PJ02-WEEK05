@@ -15,10 +15,17 @@ class UsersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var TableView1: UITableView!
     @IBOutlet weak var Text: UITextField!
 
+    @IBAction func Delete(_ sender: Any) {
+        arrName.removeAll()
+     TableView1 .reloadData()
+    }
     @IBAction func BEdit(_ sender: Any) {
         TableView1.isEditing = true
     }
+    
     @IBAction func BAdd(_ sender: Any) {
+     
+        
         if let text = Text.text{
             arrName.append(text)
             let indePath = IndexPath(row: arrName.count - 1, section: 0)
@@ -31,7 +38,7 @@ class UsersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return arrName.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -44,8 +51,11 @@ class UsersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        TableView1.delegate = self
-        TableView1.dataSource = self
+    TableView1.delegate = self
+    TableView1.dataSource = self
+        
+      //  self.clearsSelectionOnViewWillAppear = false
+    //    self.navigationItem.rightBarButtonItem = self.editButtonItem
         // Do any additional setup after loading the view.
     }
     
@@ -55,6 +65,40 @@ class UsersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         arrName.swapAt(sourceIndexPath.row, destinationIndexPath.row)
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { [self] (action, view, completionHandler) in
+            self.arrName.remove(at: indexPath.row)
+            self.TableView1.beginUpdates()
+            TableView1.deleteRows(at: [indexPath], with: .automatic)
+            TableView1.endUpdates()
+            completionHandler(true)
+        }
+        
+        let favoriteAction = UIContextualAction(style: .normal, title: "Fovert") { (_, _, _) in
+            print("User added to fovorite list")
+        }
+        delete.image = UIImage(systemName: "trash")
+        favoriteAction.image =  UIImage(systemName: "heart")
+        
+        return UISwipeActionsConfiguration(actions: [delete, favoriteAction])
+    
+}
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+//    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+//        return .delete
+//    }
+//    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//        <#code#>
+//    }
     
 
     /*
